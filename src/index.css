@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans KR", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", "Noto Sans KR", ui-sans-serif, system-ui;
+  --color-mcd-red: #DA291C;
+  --color-mcd-yellow: #FFC72C;
+  --color-mcd-black: #27251F;
+}
+
+body {
+  background-color: var(--color-mcd-black);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-mcd-black);
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-mcd-yellow);
+}
+
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
